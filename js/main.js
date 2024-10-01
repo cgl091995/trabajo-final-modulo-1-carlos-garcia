@@ -14,32 +14,76 @@ Las imágenes se seleccionaran aleatoriamente del array del header y colócala e
 Recorre el array de imágenes de la galería y genera dinámicamente los elementos del DOM (tarjetas de imágenes con sus descripciones).
 Agrega las tarjetas al contenedor de la galería en el DOM.*/
 
+/*iniciar
+    header mostrar una imagen aleatoria
+        acceder al elemento
+        funcion
+        invocar funcion
+        crear array con imagenes
+        funcion mostrar imagen random en header
+        acceder al atributo
+        cambiar valor atributo src
+    fin
+
+
+*/
+function cargarImagen(){
+
+    let index = document.getElementById("imagen"); 
+    console.log(index)
 
     const newArray=[
-        imagen.src="assets/viajes-1.jpg",
-        imagen.src="assets/viajes-2.jpg",
-        imagen.src="assets/viajes-3.jpg"
+      {
+        src:"banners/1.jpg",
+        alt:"foto"
+      },
+      {
+        src:"banners/2.jpg",
+        alt:"foto"
+      },
+      {
+        src:"banners/3.jpg",
+        alt:"foto"
+      },
+      {
+        src:"banners/4.jpg",
+        alt:"foto"
+      },
+      {
+        src:"banners/5.jpg",
+        alt:"foto"
+      },
+      {
+        src:"banners/6.jpg",
+        alt:"foto"
+      },  
+      {
+        src:"banners/7.jpg",
+        alt:"foto"
+      },
+      {
+
+        src:"banners/8.jpg",
+        alt:"foto"
+      }
+        
     ]
     console.log(newArray)
     
 
-    function cargarImagen(){
-    for(let i=0; i<=3; i++){
-    document.imagen.src = newArray[i];
-    document.getElementById("imagen"); 
-    i=Math.round(Math.random()*3)
-    }
 
-       
-      
+
+        index=Math.round(Math.random()*newArray.length)
+        imagen.getAttribute('src')
+        document.getElementById('imagen')
+        imagen.src=newArray[index].src
+                                      
 }
         
 cargarImagen()
 
      
-    
-    imagen = new Image;
-    imagen.src = "/imagenes/imagen.jpg"
+ 
 
 
 
